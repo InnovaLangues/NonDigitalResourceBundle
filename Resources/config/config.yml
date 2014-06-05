@@ -1,0 +1,9 @@
+plugin:
+  has_options: false
+  icon: res_default.png
+
+  resources:
+    - class: Innova\NonDigitalBundle\Entity\NonDigitalResource
+      name: innova_non_digital_resource
+      is_exportable: false
+      icon: res_default.png

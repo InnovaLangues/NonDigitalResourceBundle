@@ -1,0 +1,4 @@
+innova_path:
+    resource: "@InnovaNonDigitalResourceBundle/Controller/"
+    type:     annotation
+    prefix:   /

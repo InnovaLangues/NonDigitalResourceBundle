@@ -1,0 +1,6 @@
+services:
+    # NonDigitalResource type
+    innova_non_digital.form.type.non_digital_resource:
+        class: %innova_non_digital.form.type.non_digital_resource.class%
+        tags:
+          - { name: form.type, alias: innova_non_digital_resource }

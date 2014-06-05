@@ -1,0 +1,8 @@
+services:
+    # NonDigitalResource manager
+    innova_non_digital.manager.non_digital_resource:
+        class: %innova_non_digital.manager.non_digital_resource.class%
+        arguments:
+            objectManager:   @doctrine.orm.entity_manager
+            securityContext: @security.context
+            resourceManager: @claroline.manager.resource_manager

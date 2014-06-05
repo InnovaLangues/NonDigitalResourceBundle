@@ -1,0 +1,9 @@
+parameters:
+    # Managers
+    innova_non_digital.manager.non_digital_resource.class:      Innova\NonDigitalResourceBundle\Manager\NonDigitalResourceManager
+    
+    # Form types
+    innova_non_digital.form.type.non_digital_resource.class:    Innova\NonDigitalResourceBundle\Form\Type\NonDigitalResourceType
+    
+    # Form handlers
+    innova_non_digital.form.handler.non_digital_resource.class: Innova\NonDigitalResourceBundle\Form\Handler\NonDigitalResourceHandler
