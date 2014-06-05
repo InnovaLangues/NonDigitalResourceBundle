@@ -4,7 +4,7 @@
 
 Install with composer :
 
-    $ composer require "innova/path-bundle" "1.*"
+    $ composer require "innova/non-digital-resource-bundle" "1.*"
     $ php app/console claroline:plugin:install InnovaNonDigitalResourceBundle
 
 ## Uninstall
