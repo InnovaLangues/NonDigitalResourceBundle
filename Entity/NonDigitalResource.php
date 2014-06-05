@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
 /**
  * NonDigitalResource
  *
- * @ORM\Table("innova_nonDigitalResource")
+ * @ORM\Table("innova_non_digital_resource")
  * @ORM\Entity
  */
 class NonDigitalResource extends AbstractResource
