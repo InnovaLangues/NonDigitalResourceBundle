@@ -1,7 +1,0 @@
-services: 
-    # NonDigitalResource handler
-    innova_non_digital.form.handler.non_digital_resource:
-        class: %innova_non_digital.form.handler.non_digital_resource.class%
-        calls:
-            - [setRequest, [@request]]
-        scope: request

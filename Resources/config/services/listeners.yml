@@ -1,6 +1,6 @@
 services:
-  innova.listener.non_digital_resource:
-    class: Innova\NonDigitalBundle\Listener\Resource\NonDigitalResourceListener
+  innova_non_digital.listener.non_digital_resource:
+    class: %innova_non_digital.listener.non_digital_resource.class%
     calls:
       - [setContainer, ["@service_container"]]
     tags:

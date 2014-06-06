@@ -30,8 +30,7 @@ class InnovaNonDigitalResourceExtension extends Extension
     
         $loader->load('listeners.yml');
         $loader->load('managers.yml');
-        $loader->load('form_types.yml');
-        $loader->load('form_handlers.yml');
+        $loader->load('forms.yml');
         
         return $this;
     }

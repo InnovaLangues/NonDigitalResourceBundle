@@ -25,7 +25,7 @@ class NonDigitalResource extends AbstractResource
      * Set description
      *
      * @param  string             $description
-     * @return NonDigitalResource
+     * @return \Innova\NonDigitalResourceBundle\Entity\NonDigitalResource
      */
     public function setDescription($description)
     {

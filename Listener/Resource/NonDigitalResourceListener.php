@@ -15,7 +15,6 @@ use Innova\NonDigitalResourceBundle\Entity\NonDigitalResource;
 
 class NonDigitalResourceListener extends ContainerAware
 {
-    
     public function onNonDigitalResourceCreateForm(CreateFormResourceEvent $event)
     {
         // Create form
@@ -38,9 +37,9 @@ class NonDigitalResourceListener extends ContainerAware
         // Create form
         $form = $this->container->get('form.factory')->create('innova_non_digital_resource', new NonDigitalResource());
         
-        // Try to prcess form
+        // Try to process form
         $request = $this->container->get('request');
-        $form->handleRequest($request);
+        $form->submit($request);
 
         if ($form->isValid()) {
             $non_digital_resource = $form->getData();
@@ -84,9 +83,9 @@ class NonDigitalResourceListener extends ContainerAware
         $em = $this->container->get('doctrine.orm.entity_manager');
         $step2resourceNodes = $em->getRepository('InnovaPathBundle:Step2ResourceNode')->findByResourceNode($ndr->getResourceNode());
 
-        if(count($step2resourceNodes) > 0){
+        if (count($step2resourceNodes) > 0) {
             throw new \Exception('The resource you want to delete is used.');
-           }
+        }
     }
 
     public function onNonDigitalResourceCopy(CopyResourceEvent $event)

@@ -1,6 +1,6 @@
 <?php
 
-namespace Innova\NonDigitalResourceBundle\Form\Type;
+namespace Innova\NonDigitalResourceBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
